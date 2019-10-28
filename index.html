@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<div class="sidebar sidebar-">
+<div class="sidebar sidebar-default">
     <div class="navigation">
         <div>
     Kraiklyn
@@ -29,12 +29,82 @@
         <nav class="internal">
             <ul>
     
+        
+            
+    <li>
+        <a href="#introduction">Introduction</a>
+        <ul>
+            
+            
+                <li><a href="#code">Code sample</a></li>
+            
+        </ul>
+    </li>
+
+
+
+        
+            
+    <li>
+        <a href="#summary">Plot summary</a>
+    </li>
+
+
+
+        
+            
+    <li>
+        <a href="#characters">Characters</a>
+        <ul>
+            
+            
+                <li><a href="#bora">Bora</a></li>
+            
+                <li><a href="#balveda">Balveda</a></li>
+            
+                <li><a href="#kraiklyn">Kraiklyn</a></li>
+            
+        </ul>
+    </li>
+
+
+
+        
+            
+    <li>
+        <a href="#history">History</a>
+    </li>
+
+
+
+        
+            
+    <li>
+        <a href="#criticism">Criticism</a>
+    </li>
+
+
+
+        
+    
 </ul>
 
         </nav>
 
         <nav class="external">
-            <div class="external-title"></div>
+            <div class="external-title">Kraiklyn theme</div>
+            
+            <ul id="shortcuts">
+                
+                <li>
+                    <a href="https://github.com/jsnjack/kraiklyn" target="_blank" rel="noopener">Kraiklyn on Github</a>
+                </li>
+                
+                <li>
+                    <a href="https://gohugo.io/documentation/" target="_blank" rel="noopener">Hugo docs</a>
+                </li>
+                
+            </ul>
             
         </nav>
     </div>
@@ -45,6 +115,216 @@
 </div>
 
 <div class="content">
+    
+        
+            
+    <section class="page" id="introduction">
+    <h1>
+        <a href="#introduction">Introduction</a>
+    </h1>
+    <div class="content">
+        <p>Consider Phlebas, first published in 1987, is a space opera novel by Scottish writer Iain M. Banks. Written after a 1984 draft, it is the first to feature the Culture.</p>
+
+<p>The novel revolves around the Idiran–Culture War, and Banks plays on that theme by presenting various microcosms of that conflict. Its protagonist Bora Horza Gobuchul is an enemy of the Culture.</p>
+
+<div class="block note">
+    
+Consider Phlebas is Banks's first published science fiction novel set in the Culture, and takes its title from a line in T. S. Eliot's poem The Waste Land. A subsequent Culture novel, Look to Windward (2000), whose title comes from the previous line of the same poem, can be considered a loose follow-up.
+
+</div>
+
+    </div>
+</section>
+
+    
+            
+                <section class="page" id="code">
+    <h1>
+        <a href="#code">Code sample</a>
+    </h1>
+    <div class="content">
+        <pre><code class="language-python">#!/usr/bin/python
+
+# This script will monitor templates folder and automatically compile nunjucks html templates on change
+
+import os
+import sys
+from datetime import datetime
+from subprocess import call
+from time import sleep
+
+try:
+    NUNJUCKS_REPO = sys.argv[1]
+except IndexError:
+    NUNJUCKS_REPO = os.getenv(&quot;NUNJUCKS_REPO&quot;)
+try:
+    TEMPLATES_DIR = sys.argv[2]
+except IndexError:
+    TEMPLATES_DIR = os.getenv(&quot;TEMPLATES_DIR&quot;)
+
+FILES = {}
+TIMER = 1
+
+COLOUR_END = '\033[0m'
+COLOUR_GREEN = '\033[92m'
+COLOUR_BLUE = '\033[94m'
+
+
+def check_templates(templates_dir=TEMPLATES_DIR):
+    file_list = os.listdir(templates_dir)
+    for item in file_list:
+        if item.split(&quot;.&quot;)[-1] == &quot;html&quot;:
+            modified = os.path.getmtime(templates_dir + &quot;/&quot; + item)
+            if item in FILES:
+                if FILES[item] != modified:
+                    FILES[item] = modified
+                    precompile(templates_dir, item)
+            else:
+                print (COLOUR_BLUE + item + &quot; is being watched&quot; + COLOUR_END)
+                FILES[item] = modified
+                precompile(templates_dir, item)
+
+
+def precompile(tempates_dir, filename):
+    compiled_filename = filename.replace(&quot;html&quot;, &quot;js&quot;)
+    path_to_js = tempates_dir + &quot;/&quot; + compiled_filename
+    path_to_html = tempates_dir + &quot;/&quot; + filename
+    if os.path.exists(path_to_js):
+        call(&quot;rm -f &quot; + path_to_js, shell=True)
+    command = NUNJUCKS_REPO + &quot;/bin/precompile --name &quot; + filename + &quot; &quot; + path_to_html
+    command = command + &quot; &gt;&gt; &quot; + path_to_js
+    call(command, shell=True)
+    print(COLOUR_GREEN + datetime.now().strftime(&quot;%X&quot; + &quot; &quot; + filename + &quot; ...OK&quot;) + COLOUR_END)
+
+
+if __name__ == '__main__':
+    while True:
+        check_templates()
+        sleep(TIMER)
+</code></pre>
+
+    </div>
+</section>
+
+            
+
+
+
+        
+            
+    <section class="page" id="summary">
+    <h1>
+        <a href="#summary">Plot summary</a>
+    </h1>
+    <div class="content">
+        <p>The Culture and the Idiran Empire are at war in a galaxy-spanning conflict. A Culture Mind, fleeing the destruction of its ship in an Idiran ambush, takes refuge on Schar&rsquo;s World. The Dra&rsquo;Azon, godlike incorporeal beings, maintain Schar&rsquo;s World as a monument to its extinct civilisation, forbidding access to both the Culture and the Idirans. Horza, a shape-changing mercenary, is rescued from execution by the Idirans who believe the Dra&rsquo;Azon guardian may let him onto the planet as in the past he was part of a small group of Changers who acted as stewards. They instruct him to retrieve the Mind.</p>
+
+<p>During Horza&rsquo;s extraction, the Idirans also capture a Special Circumstances agent, Perosteck Balveda. However, the Idiran starship on which he is travelling is soon attacked by a Culture vessel, and Horza is ejected. He is picked up by a pirate ship, the Clear Air Turbulence (CAT). He is forced to fight and kill one of the crew to earn a place. The captain, Kraiklyn, leads them on two disastrous pirate raids in which several of the crew perish. After the second raid Horza is taken prisoner by a cult living on an island on the orbital Vavatch. He escapes after killing the cult leader and makes his way to the main city of Vavatch where he finds Kraiklyn, who is playing &ldquo;Damage&rdquo;—a high stakes card game.</p>
+
+<p>Having now changed his appearance to mimic that of the CAT captain, Horza follows him back to the CAT, kills him and returns to the CAT meeting the few remaining original crew. He is introduced to a newly recruited member, whom he recognises as a disguised Perosteck Balveda. Culture agents outside try to capture the ship. Horza manages to lift off and as the fugitives warp away from Vavatch, they see the Orbital destroyed by the Culture warships to prevent it from falling into enemy hands. Balveda reveals Horza&rsquo;s identity and he convinces the crew to carry out his mission. A Vavatch drone, Unaha-Closp, has been trapped on the ship and reluctantly joins the team.</p>
+
+<p>They land on Schar&rsquo;s World and search for the Mind in the Command System, a complex of subterranean train stations. They soon discover that the Mind is being hunted by a pair of Idiran soldiers who have killed all the Changers stationed on the planet, and who regard Horza and his crew as enemies, having no knowledge of the Changers&rsquo; alliance with the Idirans. Horza has kept Balveda alive, and she is taken into the complex. The CAT&rsquo;s crew encounter the Idirans in one of the Command System stations, and after a firefight apparently kill one and capture the other. After tracking the Mind to another station, the drone Unaha-Closp discovers it hiding in the reactor car of a Command System train. The second Idiran, who had been mortally wounded but not killed, sets one of the trains for a collision course to the station. The captured Idiran, Xoxarle, frees himself and in the ensuing impact and firefight the remaining members of the Clear Air Turbulence are killed. Horza pursues Xoxarle and is fatally injured, but the Idiran is killed by Balveda.</p>
+
+<p>Horza dies soon after Balveda gets him to the surface and the Mind is returned to the Culture. In an epilogue, the Mind becomes a starship, and names itself the Bora Horza Gobuchul.</p>
+
+    </div>
+</section>
+
+
+
+
+        
+            
+    <section class="page" id="characters">
+    <h1>
+        <a href="#characters">Characters</a>
+    </h1>
+    <div class="content">
+        <p>List of main characters</p>
+
+    </div>
+</section>
+
+    
+            
+                <section class="page" id="bora">
+    <h1>
+        <a href="#bora">Bora</a>
+    </h1>
+    <div class="content">
+        <p><strong>Bora Horza Gobuchul</strong> is a <a href="https://en.wikipedia.org/wiki/List_of_civilisations_in_the_Culture_series">Changer</a> and an operative of the Idiran Empire. Horza was one of a party of Changers allowed on Schar&rsquo;s World, and for that reason is tasked by the Idirans with retrieving a Mind that had crashed to the planet. Horza is humanoid, but committed to the Idirans because he despises the Culture for its dependence on machines and what he perceives to be spiritual emptiness.</p>
+
+    </div>
+</section>
+
+            
+                <section class="page" id="balveda">
+    <h1>
+        <a href="#balveda">Balveda</a>
+    </h1>
+    <div class="content">
+        <p>Juboal-Rabaroansa Perosteck Alseyn Balveda dam T&rsquo;seif, usually referred to as Perosteck Balveda, is an operative of the Culture assigned to track and apprehend <a href="#bora">Bora Horza Gobuchul</a>. She works for the Special Circumstances branch of Contact, and despite being ambivalent about the methods they use, deeply believes in their objectives.</p>
+
+    </div>
+</section>
+
+            
+                <section class="page" id="kraiklyn">
+    <h1>
+        <a href="#kraiklyn">Kraiklyn</a>
+    </h1>
+    <div class="content">
+        <p>Kraiklyn is the captain of the Clear Air Turbulence.</p>
+
+    </div>
+</section>
+
+            
+
+
+
+        
+            
+    <section class="page" id="history">
+    <h1>
+        <a href="#history">History</a>
+    </h1>
+    <div class="content">
+        <p>Consider Phlebas, like most of Banks&rsquo;s early SF output, was a rewritten version of an earlier book, as he explained in a 1994 interview:</p>
+
+<blockquote>
+<p>Phlebas was an old one too; it was written just after The Wasp Factory, in 1984. I&rsquo;ve found that rewriting an old book took much more effort than writing one from scratch, but I had to go back to do right by these things. Now I can go on and start completely new stuff.</p>
+</blockquote>
+
+    </div>
+</section>
+
+
+
+
+        
+            
+    <section class="page" id="criticism">
+    <h1>
+        <a href="#criticism">Criticism</a>
+    </h1>
+    <div class="content">
+        <p>The book was generally very well received as a fast-paced space opera with a morally ambiguous hero and lots of grand scenery and devices. Kirkus Reviews described it as &ldquo;Overextended and jarring&rdquo;, but &ldquo;imaginative and gripping in places.&rdquo;</p>
+
+<div class="block note">
+    
+Banks said in an interview:
+ There's a big war going on in that novel, and various individuals and groups manage to influence its outcome. But even being able to do that doesn't ultimately change things very much. At the book's end, I have a section pointing this out by telling what happened after the war, which was an attempt to pose the question, 'What was it all for?' I guess this approach has to do with my reacting to the cliché of SF's 'lone protagonist.' You know, this idea that a single individual can determine the direction of entire civilizations. It's very, very hard for a lone person to do that. And it sets you thinking what difference, if any, it would have made if Jesus Christ, or Karl Marx or Charles Darwin had never been. We just don't know.
+
+</div>
+
+    </div>
+</section>
+
+
+
+
+        
     
 </div>
 </body>

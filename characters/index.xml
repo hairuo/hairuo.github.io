@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hairuo&#39;s homepage</title>
-    <link>https://hairuo.github.io/</link>
-    <description>Recent content on hairuo&#39;s homepage</description>
+    <title>Characters on hairuo&#39;s homepage</title>
+    <link>https://hairuo.github.io/characters/</link>
+    <description>Recent content in Characters on hairuo&#39;s homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jan 2018 21:57:07 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jan 2018 22:01:36 +0100</lastBuildDate>
     
-	<atom:link href="https://hairuo.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hairuo.github.io/characters/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Code sample</title>
-      <link>https://hairuo.github.io/introduction/code/</link>
-      <pubDate>Sun, 28 Jan 2018 21:48:10 +0100</pubDate>
-      
-      <guid>https://hairuo.github.io/introduction/code/</guid>
-      <description>#!/usr/bin/python # This script will monitor templates folder and automatically compile nunjucks html templates on change import os import sys from datetime import datetime from subprocess import call from time import sleep try: NUNJUCKS_REPO = sys.argv[1] except IndexError: NUNJUCKS_REPO = os.getenv(&amp;quot;NUNJUCKS_REPO&amp;quot;) try: TEMPLATES_DIR = sys.argv[2] except IndexError: TEMPLATES_DIR = os.getenv(&amp;quot;TEMPLATES_DIR&amp;quot;) FILES = {} TIMER = 1 COLOUR_END = &#39;\033[0m&#39; COLOUR_GREEN = &#39;\033[92m&#39; COLOUR_BLUE = &#39;\033[94m&#39; def check_templates(templates_dir=TEMPLATES_DIR): file_list = os.listdir(templates_dir) for item in file_list: if item.</description>
-    </item>
     
     <item>
       <title>Bora</title>
