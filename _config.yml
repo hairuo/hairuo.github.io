@@ -59,7 +59,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Ben"
   avatar : "/assets/images/bamboo.jpg"
   bio    : "Ben — science reader, nature admirer, and a lifelong student of curiosity."
   links:
