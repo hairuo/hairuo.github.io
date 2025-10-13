@@ -87,6 +87,9 @@ footer:
 #    - label: "Instagram"
 #      icon: "fab fa-fw fa-instagram"
 #      url: "https://instagram.com/"
+    - label: "CC BY-NC 4.0"
+      icon: "far fa-fw fa-copyright"
+      url: "/LICENSE.md"
 
 defaults:
   # _posts
