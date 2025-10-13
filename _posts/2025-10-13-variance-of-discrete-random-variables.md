@@ -28,9 +28,9 @@ This post is a note to prove the equation (3.6b) for the variance of discrete un
 
 - The mean or expected value of the discrete random variable $X$, denoted as $\mu$ or $E(X)$, is 
 
-  $$
-  \mu = E(X) = \sum_{x}xf(x) \tag{3.3}
-  $$
+$$
+\mu = E(X) = \sum_{x}xf(x) \tag{3.3}
+$$
   
 
 - The variance of $X$, denoted as $\sigma^2$ or $V(X)$, is
@@ -42,7 +42,7 @@ $$
 ## 3.4 Discrete Uniform Distributions
 
 - Discrete Uniform Distribution:
-	- A random variable $X$ has a discrete uniform distribution if each of the $n$ values in its range,  $x_{1}$, $x_{2}$, $x_{3}$, . . . , $x_{n}$,  has equal probability, Then
+  - A random variable $X$ has a discrete uniform distribution if each of the $n$ values in its range,  $x_{1}$, $x_{2}$, $x_{3}$, . . . , $x_{n}$,  has equal probability, Then
 
 $$
 f(x_{i})= \frac{1}{n} \tag{3.5}
@@ -82,9 +82,8 @@ where $n = b-a$, and $1^2+2^3+\dots+n^2=\frac{1}{6}n(n+1)(2n+1)$, so[^1]
 $$
 \begin{align}
 \sum_{k=a}^{b} k^2 = (n+1)a^2 + 2(1+2+\dots+n)a + (1^2+2^2+\dots+n^2)\\ 
-
- = (n+1)a^2+n(n+1)a+\frac{1}{6}n(n+1)(2n+1) 
- \end{align}
+= (n+1)a^2+n(n+1)a+\frac{1}{6}n(n+1)(2n+1) 
+\end{align}
 $$
 
 Now we have:
@@ -98,10 +97,9 @@ and $n = b-a$. This leads to:
 $$
 \begin{align}
 \sigma^2 =\left[a^2+(b-a)a+\frac{1}{6}((b-a)(2b-2a+1) \right] \\
--(\frac{b+a}{2})^2 
- \\
+-(\frac{b+a}{2})^2 \\
 = \left[(ba+\frac{1}{3}(b-a)^2+\frac{1}{6}(b-a) \right]-(\frac{b+a}{2})^2\\
-= \frac{1}{2}ab+\frac{1}{12}(a^2+b^2)-\frac{2}{3}ab+\frac{1}{6}(b-a)\\   \\
+= \frac{1}{2}ab+\frac{1}{12}(a^2+b^2)-\frac{2}{3}ab+\frac{1}{6}(b-a)\\
 = \frac{1}{12}(a^2+b^2)-\frac{1}{6}ab+\frac{1}{6}(b-a)\\
 = \frac{1}{12}(b-a)^2+\frac{1}{6}(b-a)+\frac{1}{12}-\frac{1}{12}\\
 = \frac{(b-a+1)^2-1}{12} \\
