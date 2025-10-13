@@ -12,3 +12,41 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+<style>
+/* 调整正文字体和行距 */
+body {
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  font-family: "Noto Serif", Georgia, serif !important;
+  color: #333 !important;
+}
+
+/* 主体宽度 */
+.page__content,
+.page__inner-wrap {
+  max-width: 900px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+/* 首页 layout: home 专用 */
+.home .page__content,
+.home .page__inner-wrap {
+  max-width: 900px !important;
+}
+
+/* 数学公式居中 */
+mjx-container[jax="CHTML"][display="true"] {
+  text-align: center !important;
+  margin: 1em 0 !important;
+  font-size: 1.05em !important;
+}
+
+/* 代码块大小 */
+.highlight {
+  font-size: 0.9em !important;
+  line-height: 1.5 !important;
+}
+</style>
