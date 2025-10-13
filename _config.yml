@@ -121,6 +121,8 @@ tag_archive:
 # support latex equations
 markdown: kramdown
 kramdown:
+  input: GFM
+  hard_wrap: false
   math_engine: mathjax
   syntax_highlighter: rouge
 # make sure this line exists

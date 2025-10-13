@@ -27,12 +27,12 @@ This post is a note to prove the equation (3.6b) for the variance of discrete un
 ## 3.3 Mean and Variance of Discrete Random Variables
 
 - The mean or expected value of the discrete random variable $X$, denoted as $\mu$ or $E(X)$, is 
+
   $$
   \mu = E(X) = \sum_{x}xf(x) \tag{3.3}
   $$
   
 
-- 
 - The variance of $X$, denoted as $\sigma^2$ or $V(X)$, is
 
 $$
