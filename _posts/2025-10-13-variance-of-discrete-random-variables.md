@@ -11,7 +11,7 @@ tags:
 ---
 
 # Background
-In the textbook "Applied Statistics and Probability for Engineers" 7edition by Montgomery and Runger, chapter 3, Discrete Random Variables and Probability Distributions, some basic concepts are introduced as follows.
+In the textbook "**Applied Statistics and Probability for Engineers**" 7edition by Montgomery and Runger, chapter 3, Discrete Random Variables and Probability Distributions, some basic concepts are introduced as follows.
 
 This post is a note to prove the equation (3.6b) for the variance of discrete uniform distributions.
 
@@ -65,7 +65,7 @@ $$
 
 ---
 
-Proof of $(3.6b)$ :
+**Proof** of $(3.6b)$ :
 
 $$
 \sigma^2 =  \sum_{x=a}^{b} x^2 f(x) - \mu^2 = \sum_{k=a}^{b} k^2\frac{1}{b-a+1}-(\frac{b+a}{2})^2
@@ -110,5 +110,5 @@ $$
 
 Q.E.D.
 
-[^1]: A proof of $1^2+2^3+\dots+n^2=\frac{1}{6}n(n+1)(2n+1)$ can be found here: [What are some ways to prove that \[math\]1^2+2^2+\\cdots + n^2 = \\frac {n(n+1) (2n+1)} {6}\[/math\]? - Quora](https://qr.ae/pCv3zl), this answer actually is not original. For example, an early version can be found in the book [[Proofs Without Words - Exercises in Visual Thinking|Proofs Without Words: Exercises in Visual Thinking]].
+[^1]: A proof of $1^2+2^3+\dots+n^2=\frac{1}{6}n(n+1)(2n+1)$ can be found here: [What are some ways to prove that \[math\]1^2+2^2+\\cdots + n^2 = \\frac {n(n+1) (2n+1)} {6}\[/math\]? - Quora](https://qr.ae/pCv3zl), this answer actually is not original. For example, an early version can be found in the book "**Proofs Without Words: Exercises in Visual Thinking**".
 
