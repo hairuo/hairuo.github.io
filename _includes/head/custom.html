@@ -12,54 +12,35 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-<style>
-/* ============================= */
-/* 整体排版优化 - 内容宽度 + 字体颜色 + MathJax */
-/* ============================= */
 
-/* ---------- 页面背景和字体颜色 ---------- */
+
+<!-- =============================== -->
+<!-- Custom CSS for font size & spacing -->
+<!-- =============================== -->
+<style>
+/* ---------- 全局字体和行距 ---------- */
 body {
-  background-color: #fefefe !important; /* 明亮背景 */
-  color: #333 !important;               /* 正文字体颜色 */
-  font-size: 16px !important;
-  line-height: 1.7 !important;
+  font-size: 16px !important;        /* 正文字体略小 */
+  line-height: 1.7 !important;       /* 行距舒适 */
   font-family: "Noto Serif", Georgia, serif !important;
 }
 
-/* ---------- 最外层容器，保证页面宽度 ---------- */
-body > .page {
-  max-width: 1200px !important;  /* 页面最大宽度 */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+/* ---------- 代码块字体 ---------- */
+.highlight {
+  font-size: 0.9em !important;
+  line-height: 1.5 !important;
 }
 
-/* ---------- 正文内容宽度 ---------- */
-.page__content,
-.page__inner-wrap {
-  max-width: 900px !important;   /* 正文宽度 */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+/* ---------- 脚注字体 ---------- */
+.footnotes, .footnote {
+  font-size: 0.85em !important;
 }
 
-/* 首页 layout: home */
-.home .page__content,
-.home .page__inner-wrap {
-  max-width: 900px !important;
-}
-
-/* ---------- 标题颜色 ---------- */
-h1, h2, h3, h4, h5, h6 {
-  color: #111 !important;  /* 深色标题，容易阅读 */
-  font-weight: 600;
-}
-
-/* ---------- 侧边栏宽度 ---------- */
-.sidebar {
-  width: 230px !important;
+/* ---------- MathJax 公式 ---------- */
+mjx-container[jax="CHTML"][display="true"] {
+  text-align: center !important;
+  margin: 1em 0 !important;
+  font-size: 1.05em !important;
 }
 
 /* ---------- 图片自适应 ---------- */
@@ -68,32 +49,11 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: 1em auto;
 }
-
-/* ---------- 代码块优化 ---------- */
-.highlight {
-  font-size: 0.9em !important;
-  line-height: 1.5 !important;
-}
-
-/* ---------- 脚注 ---------- */
-.footnotes {
-  font-size: 0.85em !important;
-  color: #555 !important;
-  margin-top: 2em !important;
-}
-.footnote {
-  font-size: 0.85em !important;
-}
-
-/* ---------- MathJax ---------- */
-mjx-container[jax="CHTML"][display="true"] {
-  text-align: center !important;
-  margin: 1em 0 !important;
-  font-size: 1.05em !important;
-}
 </style>
 
+<!-- =============================== -->
 <!-- MathJax for LaTeX rendering -->
+<!-- =============================== -->
 <script>
   window.MathJax = {
     tex: {
@@ -106,3 +66,4 @@ mjx-container[jax="CHTML"][display="true"] {
   };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
