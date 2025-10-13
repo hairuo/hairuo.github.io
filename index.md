@@ -5,3 +5,5 @@
 layout: home
 author_profile: true
 ---
+
+This Github Pages mainly focuse on my personal notes and thoughts on reading books.
