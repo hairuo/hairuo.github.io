@@ -138,7 +138,7 @@ comments:
   provider: "giscus"
   giscus:
     repo_id: "R_kgDOQBs5tQ"
-    category_id: "DIC_kwDOQBs5tc4Cwo6O"
+    category_id: "DIC_kwDOQBs5tc4Cwo9a"
     mapping: "url"
     reactions_enabled: "1"
     emit_metadata: "0"
