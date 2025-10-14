@@ -10,7 +10,7 @@ tags:
   - random variables
 ---
 
-# Background
+## Background
 In the textbook "*Applied Statistics and Probability for Engineers*" 7edition by Montgomery and Runger, chapter 3, *Discrete Random Variables and Probability Distributions*, some basic concepts are introduced.
 
 This post presents a derivation of equation (3.6b), which gives the variance of discrete uniform distributions.

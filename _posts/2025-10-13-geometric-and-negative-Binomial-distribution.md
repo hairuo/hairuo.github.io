@@ -10,13 +10,13 @@ tags:
   - random variables
 ---
 
-### Background
+## Background
 In the textbook "*Applied Statistics and Probability for Engineers*" 7edition by Montgomery and Runger, chapter 3, *Discrete Random Variables and Probability Distributions*, some basic concepts are introduced.
 
 This post presents a derivation of equation (3.10b), (3.12a), (3,12b), which are variance of geometric random variable, mean of negative binomial random variable and variance of negative binomial random variable, respectively. 
 
 
-### Geometric Distribution
+## Geometric Distribution
 
 In a series of Bernoulli trials (independent trials with constant probability $p$ of a success), the random variable $X$ that equals the number of trials until the first success is a geometric random variable with parameter $0 < p < 1$ and 
 
@@ -67,7 +67,7 @@ $$
 
 Q.E.D.
 
-### Negative Binomial Distribution
+## Negative Binomial Distribution
 
 In a series of Bernoulli trials (independent trials with constant probability $p$ of a success), the random variable $X$ that equals the number of trials until $r$ successes occur is a *negative binomial random variable* with parameters $0 < p < 1$ and $r = 1, 2, 3, \dots$ , and 
 
@@ -77,14 +77,14 @@ $$
 
 Because at least $r$ trials are required to obtain $r$ successes, the range of $X$ is from $r$ to $\infty$. 
 
-#### Tips
+### Tips
 
 - Special case for $r = 1$, a *negative binomial random variable* is a *geometric random variable*.
 - General case for $r \neq 1$, *negative binomial random variable* represented as *a sum of geometric random variables*.
 	- Let $X$ denote the total number of trials required to obtain $r$ successes. Let $X_{1}$ denote the number of trials required to obtain the first success, $X_{2}$ the second, and etc. Then the total number of trials required to obtain $r$ successes is $X = X_{1} + X_{2} + \dots + X_{r}$. Because of the lack of memory property, each of the random variable $X_{1}, X_{2}, \dots,X_{r}$ has a geometric distribution with the same value of $p$. Consequently, a negative binomial random variable can be interpreted as the sum of $r$ geometric random variables. Illustrated in Figure 3.10.
 	- Based on above, we can say $\mu = \frac{r}{p}$, and $\sigma^2 = \frac{r(1-p)}{p^2}$, just $r$ times the values of geometric random variables as equation (3.12) shows.
 
-#### Mean of negative binomial random variable: (direct calculation of (3.12a))
+### Mean of negative binomial random variable: (direct calculation of (3.12a))
 
 
 
@@ -106,7 +106,7 @@ $$
 
 Q.E.D.
 
-#### Variance of negative binomial random variable: (direct calculation of (3.12b))
+### Variance of negative binomial random variable: (direct calculation of (3.12b))
 
 
 
