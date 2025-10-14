@@ -49,8 +49,8 @@ $$
 \sum x^2f(x) = \sum_{k=1}^{\infty}k^2p(1-p)^{k-1} = p\sum_{k=1}^{\infty} k^2q^{k-1}
 $$
 
+here $q = 1-p$ and considering $k^2=(k+1)k -k$, we have
 
-here $q = 1-p$ and considering $k^2=(k+1)k -k$
 $$
 \begin{align}
 p\sum_{k=1}^{\infty} k^2q^{k-1} = p\sum_{k=1}^{\infty}\left(\frac{\partial^2}{\partial q^2} q^{k+1} - \frac{\partial}{\partial q}q^{k} \right) = p\left(\frac{\partial^2}{\partial q^2}\frac{q^2}{1-q} - \frac{\partial}{\partial q}\frac{q}{1-q} \right)\\ \\
@@ -87,6 +87,7 @@ Because at least $r$ trials are required to obtain $r$ successes, the range of $
 #### Mean of negative binomial random variable: (direct calculation of (3.12a))
 
 
+
 $$
 \begin{align}
 \mu = E(X) = \sum xf(x) = \sum_{k=r}^{\infty} \binom{k-1}{r-1}(1-p)^{k-r}p^r = \sum_{k=r}^{\infty} \frac{k!}{(k-r)!(r-1)!}(1-p)^{k-r}p^r \\ \\
@@ -95,8 +96,8 @@ $$
 = \frac{p^r}{(r-1)!}\frac{\partial ^r}{\partial q^r}\left[-\left(\frac{1-q^r}{1-q}\right)+\left(\frac{1}{1-q} \right)\right]
 \end{align}
 $$
-here as we know $\frac{1-q^r}{1-q} = 1 + q + q^2 + \dots + q^{r-1}$, so the $r$-order partial derivative is $0$, and then: 
 
+here as we know $\frac{1-q^r}{1-q} = 1 + q + q^2 + \dots + q^{r-1}$, so the $r$-order partial derivative is $0$, and then: 
 $$
 \mu = \frac{p^r}{(r-1)!}\frac{\partial^r}{\partial q^r}\left(\frac{1}{1-q}\right) = \frac{p^r}{(r-1)!} \frac{r!}{p^{r+1}} = \frac{r}{p} \tag{3.12a}
 $$
@@ -112,7 +113,9 @@ $$
 $$
 
 
+
 since $kk! = (k+1)! - k!$, we have
+
 $$
 \begin{align}
 \sigma^2 = \sum_{k=r}^{\infty} \left(\frac{(k+1)!}{(k-r)!(r-1)!}(1-p)^{k-r}p^r - \frac{k!}{(k-r)!(r-1)!}(1-p)^{k-r}p^r \right) - \frac{r^2}{p^2}  \\
