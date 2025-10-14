@@ -103,7 +103,7 @@ $$
 
 Q.E.D.
 
- #### Variance of negative binomial random variable: (direct calculation of (3.12b))
+#### Variance of negative binomial random variable: (direct calculation of (3.12b))
 
 
 
@@ -124,18 +124,24 @@ $$
 
 
 as we already proved
+
+
 $$
 \frac{\partial ^r}{\partial q^r}\left(\frac{q^r}{1-q}\right) = \frac{r!}{p^{r+1}}
 $$
 
 
 similarly, 
+
+
 $$
 \frac{\partial^{r+1}}{\partial q^{r+1}}\left(\frac{q^{r+1}}{1-q}\right) = \frac{(r+1)!}{p^{r+2}}
 $$
 
 
 So that
+
+
 $$
 \sigma^2 = \frac{p^r}{(r-1)!}\left(\frac{(r+1)!}{p^{r+2}}-\frac{r!}{p^{r+1}}\right) - \frac{r^2}{p^2} = \frac{(r+1)r}{p^2} - \frac{r}{p} -\frac{r^2}{p^2} = \frac{r(1-p)}{p^2} \tag{3.12b}
 $$
