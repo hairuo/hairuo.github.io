@@ -8,6 +8,7 @@ tags:
   - statistics
   - probability
   - random variables
+comments: true
 ---
 
 ## Background

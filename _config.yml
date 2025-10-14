@@ -132,3 +132,14 @@ kramdown:
   syntax_highlighter: rouge
 # make sure this line exists
 include: ["_pages", "_includes"]
+
+
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id: "R_kgDOQBs5tQ"
+    category_id: "DIC_kwDOQBs5tc4Cwo6O"
+    mapping: "url"
+    reactions_enabled: "1"
+    emit_metadata: "0"
+    theme: "preferred_color_scheme"
