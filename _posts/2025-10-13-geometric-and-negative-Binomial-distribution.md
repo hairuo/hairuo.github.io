@@ -91,7 +91,7 @@ Because at least $r$ trials are required to obtain $r$ successes, the range of $
 $$
 \begin{align}
 \mu = E(X) = \sum xf(x) = \sum_{k=r}^{\infty} \binom{k-1}{r-1}(1-p)^{k-r}p^r = \sum_{k=r}^{\infty} \frac{k!}{(k-r)!(r-1)!}(1-p)^{k-r}p^r \\ \\
-= \frac{p^r}{(r-1)!} \sum_{k=r}^{oo} \frac{k!}{(k-r)!}q^{k-r}= \frac{p^r}{(r-1)!} \sum_{k=r}^{oo} \frac{\partial^r}{\partial q^r}q^{k} = \frac{p^r}{(r-1)!} \frac{\partial^r}{\partial q^r}\sum_{k=r}^{oo} q^{k} \\
+= \frac{p^r}{(r-1)!} \sum_{k=r}^{\infty} \frac{k!}{(k-r)!}q^{k-r}= \frac{p^r}{(r-1)!} \sum_{k=r}^{\infty} \frac{\partial^r}{\partial q^r}q^{k} = \frac{p^r}{(r-1)!} \frac{\partial^r}{\partial q^r}\sum_{k=r}^{\infty} q^{k} \\
 = \frac{p^r}{(r-1)!}\frac{\partial ^r}{\partial q^r}\left( \frac{q^r}{1-q} \right) = \frac{p^r}{(r-1)!}\frac{\partial ^r}{\partial q^r}\left( \frac{q^r-1+1}{1-q}\right) \\
 = \frac{p^r}{(r-1)!}\frac{\partial ^r}{\partial q^r}\left[-\left(\frac{1-q^r}{1-q}\right)+\left(\frac{1}{1-q} \right)\right]
 \end{align}
