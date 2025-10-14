@@ -1,7 +1,6 @@
 ---
 title: "Variance of Discrete Random Variables"
 excerpt_separator: "<!--more-->"
-comments: true
 categories:
   - math
 tags:
@@ -9,6 +8,7 @@ tags:
   - statistics
   - probability
   - random variables
+comments: true
 ---
 
 ## Background
