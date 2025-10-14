@@ -11,9 +11,9 @@ tags:
 ---
 
 # Background
-In the textbook "**Applied Statistics and Probability for Engineers**" 7edition by Montgomery and Runger, chapter 3, Discrete Random Variables and Probability Distributions, some basic concepts are introduced as follows.
+In the textbook "*Applied Statistics and Probability for Engineers*" 7edition by Montgomery and Runger, chapter 3, *Discrete Random Variables and Probability Distributions*, some basic concepts are introduced.
 
-This post is a note to prove the equation (3.6b) for the variance of discrete uniform distributions.
+This post presents a derivation of equation (3.6b), which gives the variance of discrete uniform distributions.
 
 ## 3.1 Probability Distributions and Probability Mass Functions
 
