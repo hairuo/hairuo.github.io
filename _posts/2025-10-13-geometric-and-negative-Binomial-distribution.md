@@ -98,9 +98,11 @@ $$
 $$
 
 here as we know $\frac{1-q^r}{1-q} = 1 + q + q^2 + \dots + q^{r-1}$, so the $r$-order partial derivative is $0$, and then: 
+
 $$
 \mu = \frac{p^r}{(r-1)!}\frac{\partial^r}{\partial q^r}\left(\frac{1}{1-q}\right) = \frac{p^r}{(r-1)!} \frac{r!}{p^{r+1}} = \frac{r}{p} \tag{3.12a}
 $$
+
 
 Q.E.D.
 
