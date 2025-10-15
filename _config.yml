@@ -158,7 +158,7 @@ comments:
   giscus:
     repo: "hairuo/hairuo.github.io"
     repo_id: "R_kgDOQBs5tQ"
-    category: "Comments"
+    category: "Announcements"
     category_id: "DIC_kwDOQBs5tc4Cwo9a"
     mapping: "pathname"          # better and more stable than "url" or "title"
     strict: "0"
