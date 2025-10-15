@@ -137,9 +137,13 @@ include: ["_pages", "_includes"]
 comments:
   provider: "giscus"
   giscus:
+    repo: "hairuo/hairuo.github.io"
     repo_id: "R_kgDOQBs5tQ"
+    category: "Commentsl"
     category_id: "DIC_kwDOQBs5tc4Cwo9a"
     mapping: "url"
     reactions_enabled: "1"
     emit_metadata: "0"
+    input_position: "bottom"
     theme: "preferred_color_scheme"
+    lang: "en"
