@@ -39,6 +39,11 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+include:
+  - "_pages"
+  - "_includes"
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -144,12 +149,10 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 # make sure this line exists
-include:
-  - "_pages"
-  - "_includes"
 
 
-repository: "hairuo/hairuo.github.io"
+
+# Giscus comments
 comments:
   provider: "giscus"
   giscus:
@@ -157,7 +160,7 @@ comments:
     repo_id: "R_kgDOQBs5tQ"
     category: "Comments"
     category_id: "DIC_kwDOQBs5tc4Cwo9a"
-    mapping: "pathname"          # ✅ 推荐 pathname，比 url 更稳（避免末尾斜杠等问题）
+    mapping: "pathname"          # better and more stable than "url" or "title"
     strict: "0"
     reactions_enabled: "1"
     emit_metadata: "0"
