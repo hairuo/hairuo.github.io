@@ -58,6 +58,22 @@ h2 { font-size: 1.5rem !important; }
 h3 { font-size: 1.25rem !important; }
 
 /* ------------------------------
+   Giscus 评论框兼容样式
+------------------------------ */
+.giscus {
+  background-color: transparent !important; /* 避免被 body 背景覆盖 */
+  color: inherit !important;                /* 避免字体不可见 */
+  max-width: 100% !important;               /* 评论框宽度自适应文章宽度 */
+  margin-top: 2em !important;
+}
+
+/* 强制评论 iframe 内部字体可见（暗色模式下） */
+.giscus iframe {
+  background-color: #1b1b1b !important;
+  color: #e0e0e0 !important;
+}
+
+/* ------------------------------
    响应式设计
 ------------------------------ */
 @media (max-width: 768px) {
