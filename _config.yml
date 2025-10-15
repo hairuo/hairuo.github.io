@@ -124,6 +124,22 @@ tag_archive:
   path: /tags/
 
 # support latex equations
+# MathJax Settings ⚙️
+mathjax:
+  enable: true
+  # provider: "mathjax-cdn" # "mathjax-cdn" is the default, so this line is optional
+  # The following customizes MathJax to use single dollar signs for inline math
+  extensions:
+    - "tex-chtml-full"
+  tex:
+    inlineMath:
+      - ["$", "$"]
+      - ["\\(", "\\)"]
+    displayMath:
+      - ["$$", "$$"]
+      - ["\\[", "\\]"]
+      
+# ... your kramdown settings ...
 markdown: kramdown
 kramdown:
   input: GFM
