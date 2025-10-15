@@ -139,7 +139,7 @@ comments:
   giscus:
     repo: "hairuo/hairuo.github.io"
     repo_id: "R_kgDOQBs5tQ"
-    category: "Commentsl"
+    category: "Comments"
     category_id: "DIC_kwDOQBs5tc4Cwo9a"
     mapping: "url"
     reactions_enabled: "1"
