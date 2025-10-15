@@ -1,18 +1,4 @@
-{% if page.comments != false and site.comments.provider %}
-  <div id="comments" class="page__comments">
-    <h2 class="page__comments-title">Comments</h2>
-
-    {% case site.comments.provider %}
-      {% when "giscus" %}
-        {% include comments-providers/giscus.html %}
-      {% when "disqus" %}
-        {% include comments-providers/disqus.html %}
-      {% when "utterances" %}
-        {% include comments-providers/utterances.html %}
-      {% when "staticman" %}
-        {% include comments-providers/staticman.html %}
-      {% when "custom" %}
-        {% include comments-providers/custom.html %}
-    {% endcase %}
-  </div>
-{% endif %}
+{% case site.comments.provider %}
+  {% when "giscus" %}
+    {% include comments-providers/giscus.html %}
+{% endcase %}
