@@ -149,11 +149,10 @@ kramdown:
 # make sure this line exists
 include: ["_pages", "_includes"]
 
-
+respository: "hairuo/hairuo.github.io"
 comments:
   provider: "giscus"
   giscus:
-    repo: "hairuo/hairuo.github.io"
     repo_id: "R_kgDOQBs5tQ"
     category: "Comments"
     category_id: "DIC_kwDOQBs5tc4Cwo9a"
