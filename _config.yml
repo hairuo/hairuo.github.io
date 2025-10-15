@@ -39,9 +39,6 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-include:
-  - _pages
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -147,12 +144,16 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 # make sure this line exists
-include: ["_pages", "_includes"]
+include:
+  - "_pages"
+  - "_includes"
 
-respository: "hairuo/hairuo.github.io"
+
+repository: "hairuo/hairuo.github.io"
 comments:
   provider: "giscus"
   giscus:
+    repo: "hairuo/hairuo.github.io"
     repo_id: "R_kgDOQBs5tQ"
     category: "Comments"
     category_id: "DIC_kwDOQBs5tc4Cwo9a"
