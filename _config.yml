@@ -141,8 +141,7 @@ mathjax:
       - ["$$", "$$"]
       - ["\\[", "\\]"]
       
-# ... your kramdown settings ...
-markdown: kramdown
+# kramdown settings
 kramdown:
   input: GFM
   hard_wrap: false
@@ -153,14 +152,14 @@ kramdown:
 
 
 # Giscus comments
+repository: "hairuo/hairuo.github.io"
 comments:
   provider: "giscus"
   giscus:
-    repo: "hairuo/hairuo.github.io"
     repo_id: "R_kgDOQBs5tQ"
-    category: "Comments"
+    category_name: "Comments"
     category_id: "DIC_kwDOQBs5tc4Cwo9a"
-    mapping: "pathname"          # better and more stable than "url" or "title"
+    discussion_term: "pathname"
     strict: "0"
     reactions_enabled: "1"
     emit_metadata: "0"
